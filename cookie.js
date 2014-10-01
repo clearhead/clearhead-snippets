@@ -2,6 +2,7 @@
 /**
  * Simple (get|set)Cookie
  */
+
 // Setting a cookie that expires in a number of days:
 window.clearhead = window.clearhead || {};
 window.clearhead.setCookie = function (name, value, optDays) {
@@ -15,7 +16,7 @@ window.clearhead.setCookie = function (name, value, optDays) {
   document.cookie = name + '=' + value + expires + '; path=/';
 };
 
-// Setting a cookie that expires in a number of days:
+// Setting a cookie that expires in a number of minutes:
 window.clearhead = window.clearhead || {};
 window.clearhead.setCookie = function(name, value, optMinutes) {
   'use strict';
