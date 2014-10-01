@@ -2,6 +2,7 @@
 /**
  * Simple (get|set)Cookie
  */
+// Setting a cookie that expires in a number of days:
 window.clearhead = window.clearhead || {};
 window.clearhead.setCookie = function (name, value, optDays) {
   'use strict';
@@ -13,6 +14,21 @@ window.clearhead.setCookie = function (name, value, optDays) {
   }
   document.cookie = name + '=' + value + expires + '; path=/';
 };
+
+// Setting a cookie that expires in a number of days:
+window.clearhead = window.clearhead || {};
+window.clearhead.setCookie = function(name, value, optMinutes) {
+  'use strict';
+  var expires = '';
+  if (optMinutes) {
+    var date = new Date();
+    date.setTime(date.getMinutes() + (optMinutes));
+    expires = '; expires=' + date.toGMTString();
+  }
+  document.cookie = name + '=' + value + expires + '; path=/';
+};
+
+// Getting a cookie:
 window.clearhead.getCookie = function (name) {
   'use strict';
   var nameEQ = name + '=';
