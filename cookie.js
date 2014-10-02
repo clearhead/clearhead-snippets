@@ -18,12 +18,12 @@ window.clearhead.setCookie = function (name, value, optDays) {
 
 // Setting a cookie that expires in a number of minutes:
 window.clearhead = window.clearhead || {};
-window.clearhead.setCookie = function(name, value, optMinutes) {
+window.clearhead.setCookieInMinutes = function(name, value, optMinutes) {
   'use strict';
   var expires = '';
   if (optMinutes) {
     var date = new Date();
-    date.setTime(date.getMinutes() + (optMinutes));
+    date.setMinutes(date.getMinutes() + (optMinutes));
     expires = '; expires=' + date.toGMTString();
   }
   document.cookie = name + '=' + value + expires + '; path=/';
