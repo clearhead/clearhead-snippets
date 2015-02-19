@@ -24,4 +24,8 @@ window.clearhead.getCookie = function (name) {
   }
   return null;
 };
+window.clearhead.deleteCookie = function(name) {
+  var expires = '; expires=' + (new Date(0)).toUTCString();
+  document.cookie = name + '=; ' + expires + '; path=/';
+};
 /* _optimizely_evaluate=safe */
