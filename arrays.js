@@ -1,4 +1,6 @@
+
 // NOTE: 2015-03-19 moved to https://github.com/clearhead/optimizely-snippets
+
 /*
 Batch an array into chunks of size n
   E.g.:
