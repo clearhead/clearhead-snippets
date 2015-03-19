@@ -1,3 +1,6 @@
+
+// NOTE: 2015-03-19 moved to https://github.com/clearhead/optimizely-snippets
+
 // Extends the window.clearhead object
 window.clearhead.extend = function() {
   'use strict';
