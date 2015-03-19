@@ -1,5 +1,7 @@
-clearhead
-=========
+clearhead-snippets [deprecated]
+===============================
+
+**2015-03-19 moved to https://github.com/clearhead/optimizely-snippets**
 
 Helper functions not found in optimizely's api. Paste needed code in your experiment's global js. Supports IE9+.
 
