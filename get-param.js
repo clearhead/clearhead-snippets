@@ -1,3 +1,6 @@
+
+// NOTE: 2015-03-19 moved to https://github.com/clearhead/optimizely-snippets
+
 /* _optimizely_evaluate=force */
 /**
  * Get querystring param by name
