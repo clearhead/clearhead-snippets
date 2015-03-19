@@ -1,3 +1,6 @@
+
+// NOTE: 2015-03-19 moved to https://github.com/clearhead/optimizely-snippets
+
 /* _optimizely_evaluate=force */
 /**
  * Async Load script w/ callback.
